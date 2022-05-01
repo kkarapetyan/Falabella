@@ -40,9 +40,9 @@ class LoginPresenter {
         } else  {
             
             let pass = try! password!.aesEncrypt()
-           guard let result = CoreDataManager.shared.fetchUserdetails(withEmail: email!,
-                                                                      password: pass ) else {
-               delegate?.showLoginError(errMessage: Constant.Strings.invalidLogin)
+//           guard let result = CoreDataManager.shared.fetchUserdetails(withEmail: email!,
+//                                                                      password: pass ) else {
+//               delegate?.showLoginError(errMessage: Constant.Strings.invalidLogin)
                return
            }
             
