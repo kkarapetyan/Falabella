@@ -15,6 +15,46 @@ public enum AuthStatus {
 class CoreDataManager {
      static let shared = CoreDataManager()
     
+    
+//    fileprivate lazy var managedObjectModel: NSManagedObjectModel = {
+//
+//    // the moc's model should be accessible via apps in this workspace
+//    // or through the module that cocoapods will create as part of the file's
+//    // resource bundle, as such, we need to look in two different places
+//    // to use the correct bundle at run time
+//    var rawBundle: Bundle? {
+//
+//        if let bundle = Bundle(identifier: "com.thefredelement.Framework") {
+//            return bundle
+//        }
+//
+//        guard
+//            let resourceBundleURL = Bundle(for: type(of: self)).url(forResource: "FrameworkModel", withExtension: "bundle"),
+//            let realBundle = Bundle(url: resourceBundleURL) else {
+//                return nil
+//        }
+//
+//        return realBundle
+//    }
+//
+//    guard let bundle = rawBundle else {
+//        print("Could not get bundle that contains the model ")
+//        return NSManagedObjectModel()
+//    }
+//
+//    guard
+//        let modelURL = bundle.url(forResource: self.model, withExtension: "momd"),
+//        let model = NSManagedObjectModel(contentsOf: modelURL) else {
+//            print("Could not get bundle for managed object model")
+//            return NSManagedObjectModel()
+//    }
+//
+//    return model
+//    }()
+
+    
+    
+    
     let persistentContainer: NSPersistentContainer = {
         
         let container = NSPersistentContainer(name: "UserData")
