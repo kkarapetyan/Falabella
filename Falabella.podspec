@@ -6,7 +6,7 @@ s.name = "Falabella"
 s.summary = "Falabella is a library for custom authentication"
 s.requires_arc = true
 
-s.version = "1.0.1"
+s.version = "1.0.2"
 
 s.author = { "Karine Karapetyan" => "karapetyankarine87@gmail.com" }
 
