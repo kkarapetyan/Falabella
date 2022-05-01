@@ -216,6 +216,11 @@
 		56BBA1A8281ECD050058DCE3 /* Falabella */ = {
 			isa = PBXGroup;
 			children = (
+				56BBA1D0281ECE7C0058DCE3 /* Assets.xcassets */,
+				56BBA28D281F08010058DCE3 /* UserData.xcdatamodeld */,
+				56BBA275281F07C30058DCE3 /* Managers */,
+				56BBA219281F078A0058DCE3 /* PresentationLayer */,
+				56BBA1FB281F07080058DCE3 /* Helper */,
 				56BBA1C0281ECDFD0058DCE3 /* FalabellaExample */,
 				56BBA1A9281ECD050058DCE3 /* Falabella.h */,
 				56BBA1AA281ECD050058DCE3 /* Falabella.docc */,
@@ -243,9 +248,6 @@
 			isa = PBXGroup;
 			children = (
 				56BBA28C281F07DF0058DCE3 /* SupportFiles */,
-				56BBA275281F07C30058DCE3 /* Managers */,
-				56BBA219281F078A0058DCE3 /* PresentationLayer */,
-				56BBA1FB281F07080058DCE3 /* Helper */,
 				56BBA1C7281ECE790058DCE3 /* AppDelegate.swift */,
 				56BBA1C9281ECE790058DCE3 /* SceneDelegate.swift */,
 				56BBA1CB281ECE790058DCE3 /* ViewController.swift */,
@@ -484,9 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				56BBA1D5281ECE7C0058DCE3 /* Info.plist */,
-				56BBA28D281F08010058DCE3 /* UserData.xcdatamodeld */,
 				56BBA1D2281ECE7C0058DCE3 /* LaunchScreen.storyboard */,
-				56BBA1D0281ECE7C0058DCE3 /* Assets.xcassets */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
