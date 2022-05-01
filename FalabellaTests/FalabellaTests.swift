@@ -9,6 +9,7 @@ import XCTest
 @testable import Falabella
 
 class FalabellaTests: XCTestCase {
+    var falabella: Falabella!
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -32,5 +33,19 @@ class FalabellaTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    
+    override func setUp() {
+            falabella = Falabella()
+        }
+
+        func testAdd() {
+            XCTAssertEqual(falabella.add(a: 1, b: 1), 2)
+        }
+    
+    func testSub() {
+           XCTAssertEqual(falabella.sub(a: 2, b: 1), 1)
+       }
+
 
 }
