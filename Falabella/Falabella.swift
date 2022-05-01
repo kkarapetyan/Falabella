@@ -13,6 +13,10 @@ public final class Falabella {
     var initialViewController: UIViewController?
     var navController: UINavigationController?
 
+    init() {
+        
+    }
+    
     func openModule() {
         
         window = UIWindow(frame:UIScreen.main.bounds)
