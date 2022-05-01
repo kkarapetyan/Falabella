@@ -6,24 +6,20 @@
 //
 
 import Foundation
+import UIKit
 
 public final class Falabella {
-    
-    var window: UIWindow?
-    var initialViewController: UIViewController?
-    var navController: UINavigationController?
 
    public init() {
         
     }
     
    public func openModule() {
-        
-        window = UIWindow(frame:UIScreen.main.bounds)
-        initialViewController = UserDefaultsManager.shared.isLoggedIn() ? AttributesViewController(nibName: Constant.NibNames.attributes, bundle: nil) : LoginViewController(nibName: Constant.NibNames.login, bundle: nil)
-        navController = UINavigationController(rootViewController: initialViewController!)
-        window?.rootViewController = navController
-        window?.makeKeyAndVisible()
+       
+       let vc = UIViewController
+       vc = UserDefaultsManager.shared.isLoggedIn() ? AttributesViewController(nibName: Constant.NibNames.attributes, bundle: nil) : LoginViewController(nibName: Constant.NibNames.login, bundle: nil)
+       self.navigationController?.pushViewController(vc, animated: true)
+
     }
     
 }

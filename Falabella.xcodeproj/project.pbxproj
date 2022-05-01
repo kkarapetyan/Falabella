@@ -90,9 +90,6 @@
 		56BBA272281F078B0058DCE3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA23E281F078B0058DCE3 /* BaseViewController.swift */; };
 		56BBA273281F078B0058DCE3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA23E281F078B0058DCE3 /* BaseViewController.swift */; };
 		56BBA274281F078B0058DCE3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA23E281F078B0058DCE3 /* BaseViewController.swift */; };
-		56BBA27D281F07C30058DCE3 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA276281F07C30058DCE3 /* KeychainManager.swift */; };
-		56BBA27E281F07C30058DCE3 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA276281F07C30058DCE3 /* KeychainManager.swift */; };
-		56BBA27F281F07C40058DCE3 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA276281F07C30058DCE3 /* KeychainManager.swift */; };
 		56BBA280281F07C40058DCE3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA278281F07C30058DCE3 /* NetworkManager.swift */; };
 		56BBA281281F07C40058DCE3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA278281F07C30058DCE3 /* NetworkManager.swift */; };
 		56BBA282281F07C40058DCE3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA278281F07C30058DCE3 /* NetworkManager.swift */; };
@@ -159,7 +156,6 @@
 		56BBA23A281F078B0058DCE3 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		56BBA23B281F078B0058DCE3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		56BBA23E281F078B0058DCE3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		56BBA276281F07C30058DCE3 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		56BBA278281F07C30058DCE3 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		56BBA279281F07C30058DCE3 /* JsonConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonConverter.swift; sourceTree = "<group>"; };
 		56BBA27A281F07C30058DCE3 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
@@ -457,7 +453,6 @@
 		56BBA275281F07C30058DCE3 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				56BBA276281F07C30058DCE3 /* KeychainManager.swift */,
 				56BBA277281F07C30058DCE3 /* Network */,
 				56BBA27A281F07C30058DCE3 /* UserDefaultsManager.swift */,
 				56BBA27B281F07C30058DCE3 /* CoreData */,
@@ -668,7 +663,6 @@
 				56BBA212281F07630058DCE3 /* Constants.swift in Sources */,
 				56BBA251281F078B0058DCE3 /* DetailsViewController.swift in Sources */,
 				56BBA289281F07C40058DCE3 /* CoreDataManager.swift in Sources */,
-				56BBA27D281F07C30058DCE3 /* KeychainManager.swift in Sources */,
 				56BBA257281F078B0058DCE3 /* Attributes.swift in Sources */,
 				56BBA25D281F078B0058DCE3 /* AttributeTableViewCell.swift in Sources */,
 				56BBA24B281F078B0058DCE3 /* DetailsPresenter.swift in Sources */,
@@ -701,7 +695,6 @@
 				56BBA243281F078B0058DCE3 /* UserRegister.swift in Sources */,
 				56BBA28A281F07C40058DCE3 /* CoreDataManager.swift in Sources */,
 				56BBA240281F078B0058DCE3 /* SignUpPresenter.swift in Sources */,
-				56BBA27E281F07C30058DCE3 /* KeychainManager.swift in Sources */,
 				56BBA26A281F078B0058DCE3 /* User.swift in Sources */,
 				56BBA205281F07430058DCE3 /* UIButton+Border.swift in Sources */,
 				56BBA252281F078B0058DCE3 /* DetailsViewController.swift in Sources */,
@@ -734,7 +727,6 @@
 				56BBA288281F07C40058DCE3 /* UserDefaultsManager.swift in Sources */,
 				56BBA265281F078B0058DCE3 /* AttributesViewController.swift in Sources */,
 				56BBA24D281F078B0058DCE3 /* DetailsPresenter.swift in Sources */,
-				56BBA27F281F07C40058DCE3 /* KeychainManager.swift in Sources */,
 				56BBA20C281F07430058DCE3 /* UIViewController+Alert.swift in Sources */,
 				56BBA253281F078B0058DCE3 /* DetailsViewController.swift in Sources */,
 				56BBA285281F07C40058DCE3 /* JsonConverter.swift in Sources */,
