@@ -14,5 +14,6 @@ FOUNDATION_EXPORT double FalabellaVersionNumber;
 FOUNDATION_EXPORT const unsigned char FalabellaVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Falabella/PublicHeader.h>
+#import <Falabella/Constants>
 
 
