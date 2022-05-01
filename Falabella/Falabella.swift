@@ -13,7 +13,7 @@ public final class Falabella {
     var initialViewController: UIViewController?
     var navController: UINavigationController?
 
-    init() {
+   public init() {
         
     }
     
