@@ -8,15 +8,20 @@
 import Foundation
 
 public final class Falabella {
+    
+    var window: UIWindow?
+    var initialViewController: UIViewController?
+    var navController: UINavigationController?
 
-    let name = "Falabella"
-    
-    public func add(a: Int, b: Int) -> Int {
-        return a + b
-    }
-    
-    public func sub(a: Int, b: Int) -> Int {
-        return a - b
+    func openModule() {
+        
+        window = UIWindow(frame:UIScreen.main.bounds)
+        initialViewController = UserDefaultsManager.shared.isLoggedIn() ? AttributesViewController(nibName: Constant.NibNames.attributes, bundle: nil) : LoginViewController(nibName: Constant.NibNames.login, bundle: nil)
+        navController = UINavigationController(rootViewController: initialViewController!)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
     }
     
 }
+
+

@@ -39,13 +39,6 @@ class FalabellaTests: XCTestCase {
             falabella = Falabella()
         }
 
-        func testAdd() {
-            XCTAssertEqual(falabella.add(a: 1, b: 1), 2)
-        }
-    
-    func testSub() {
-           XCTAssertEqual(falabella.sub(a: 2, b: 1), 1)
-       }
-
+        
 
 }
