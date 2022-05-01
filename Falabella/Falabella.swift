@@ -17,7 +17,7 @@ public final class Falabella {
         
     }
     
-    func openModule() {
+   public func openModule() {
         
         window = UIWindow(frame:UIScreen.main.bounds)
         initialViewController = UserDefaultsManager.shared.isLoggedIn() ? AttributesViewController(nibName: Constant.NibNames.attributes, bundle: nil) : LoginViewController(nibName: Constant.NibNames.login, bundle: nil)

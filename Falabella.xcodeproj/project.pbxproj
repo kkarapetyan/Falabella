@@ -105,9 +105,9 @@
 		56BBA289281F07C40058DCE3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA27C281F07C30058DCE3 /* CoreDataManager.swift */; };
 		56BBA28A281F07C40058DCE3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA27C281F07C30058DCE3 /* CoreDataManager.swift */; };
 		56BBA28B281F07C40058DCE3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA27C281F07C30058DCE3 /* CoreDataManager.swift */; };
-		56BBA28F281F08010058DCE3 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA28D281F08010058DCE3 /* UserData.xcdatamodeld */; };
-		56BBA290281F08010058DCE3 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA28D281F08010058DCE3 /* UserData.xcdatamodeld */; };
-		56BBA291281F08010058DCE3 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA28D281F08010058DCE3 /* UserData.xcdatamodeld */; };
+		56BBA294281F12A10058DCE3 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA292281F12A10058DCE3 /* UserData.xcdatamodeld */; };
+		56BBA295281F12A10058DCE3 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA292281F12A10058DCE3 /* UserData.xcdatamodeld */; };
+		56BBA296281F12A10058DCE3 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA292281F12A10058DCE3 /* UserData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,7 +164,7 @@
 		56BBA279281F07C30058DCE3 /* JsonConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonConverter.swift; sourceTree = "<group>"; };
 		56BBA27A281F07C30058DCE3 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		56BBA27C281F07C30058DCE3 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		56BBA28E281F08010058DCE3 /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
+		56BBA293281F12A10058DCE3 /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				56BBA1D0281ECE7C0058DCE3 /* Assets.xcassets */,
-				56BBA28D281F08010058DCE3 /* UserData.xcdatamodeld */,
 				56BBA275281F07C30058DCE3 /* Managers */,
 				56BBA219281F078A0058DCE3 /* PresentationLayer */,
 				56BBA1FB281F07080058DCE3 /* Helper */,
@@ -225,6 +224,7 @@
 				56BBA1A9281ECD050058DCE3 /* Falabella.h */,
 				56BBA1AA281ECD050058DCE3 /* Falabella.docc */,
 				56BBA1D9281EDF130058DCE3 /* Falabella.swift */,
+				56BBA292281F12A10058DCE3 /* UserData.xcdatamodeld */,
 			);
 			path = Falabella;
 			sourceTree = "<group>";
@@ -646,7 +646,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56BBA28F281F08010058DCE3 /* UserData.xcdatamodeld in Sources */,
+				56BBA294281F12A10058DCE3 /* UserData.xcdatamodeld in Sources */,
 				56BBA280281F07C40058DCE3 /* NetworkManager.swift in Sources */,
 				56BBA245281F078B0058DCE3 /* SignUpViewController.swift in Sources */,
 				56BBA254281F078B0058DCE3 /* AttributesPresenter.swift in Sources */,
@@ -680,7 +680,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56BBA290281F08010058DCE3 /* UserData.xcdatamodeld in Sources */,
+				56BBA295281F12A10058DCE3 /* UserData.xcdatamodeld in Sources */,
 				56BBA20B281F07430058DCE3 /* UIViewController+Alert.swift in Sources */,
 				56BBA1B6281ECD050058DCE3 /* FalabellaTests.swift in Sources */,
 				56BBA284281F07C40058DCE3 /* JsonConverter.swift in Sources */,
@@ -719,7 +719,7 @@
 				56BBA259281F078B0058DCE3 /* Attributes.swift in Sources */,
 				56BBA1CC281ECE790058DCE3 /* ViewController.swift in Sources */,
 				56BBA268281F078B0058DCE3 /* LoginPresenter.swift in Sources */,
-				56BBA291281F08010058DCE3 /* UserData.xcdatamodeld in Sources */,
+				56BBA296281F12A10058DCE3 /* UserData.xcdatamodeld in Sources */,
 				56BBA28B281F07C40058DCE3 /* CoreDataManager.swift in Sources */,
 				56BBA206281F07430058DCE3 /* UIButton+Border.swift in Sources */,
 				56BBA256281F078B0058DCE3 /* AttributesPresenter.swift in Sources */,
@@ -1076,12 +1076,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		56BBA28D281F08010058DCE3 /* UserData.xcdatamodeld */ = {
+		56BBA292281F12A10058DCE3 /* UserData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				56BBA28E281F08010058DCE3 /* UserData.xcdatamodel */,
+				56BBA293281F12A10058DCE3 /* UserData.xcdatamodel */,
 			);
-			currentVersion = 56BBA28E281F08010058DCE3 /* UserData.xcdatamodel */;
+			currentVersion = 56BBA293281F12A10058DCE3 /* UserData.xcdatamodel */;
 			path = UserData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
