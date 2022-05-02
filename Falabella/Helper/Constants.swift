@@ -44,7 +44,8 @@ struct Constant {
     
     struct Colors {
         
-        static let main_color = UIColor(named: "main_color") ?? UIColor()
+        static let main_color = UIColor(red: 50/255.0, green: 65/255.0, blue: 185/255.0, alpha: 1)
+
     }
 }
 

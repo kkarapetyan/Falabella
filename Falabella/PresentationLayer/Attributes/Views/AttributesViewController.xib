@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AttributesViewController" customModule="Falabella" customModuleProvider="target">
             <connections>
+                <outlet property="mActivityV" destination="oeo-aT-lxJ" id="6RI-bP-NQN"/>
                 <outlet property="mSearchTxtFl" destination="IRf-JE-wov" id="Cgj-Qc-Kuy"/>
                 <outlet property="mTableV" destination="JAa-Wn-OX0" id="p0v-Eq-MO3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -71,15 +72,22 @@
                     <rect key="frame" x="0.0" y="100.5" width="414" height="761.5"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="oeo-aT-lxJ">
+                    <rect key="frame" x="188.5" y="318.5" width="37" height="37"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="color" red="0.1960784314" green="0.25490196079999999" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Lyd-40-OgU" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.9" id="734-Rs-643"/>
                 <constraint firstItem="JAa-Wn-OX0" firstAttribute="top" secondItem="Lyd-40-OgU" secondAttribute="bottom" id="9ch-mM-G1Z"/>
+                <constraint firstItem="oeo-aT-lxJ" firstAttribute="centerX" secondItem="JAa-Wn-OX0" secondAttribute="centerX" id="SjS-lA-X2W"/>
                 <constraint firstItem="Lyd-40-OgU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" multiplier="1.1" id="U5N-Ay-lnH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JAa-Wn-OX0" secondAttribute="trailing" id="UN0-qX-3TB"/>
                 <constraint firstItem="JAa-Wn-OX0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c9u-CH-jAr"/>
+                <constraint firstItem="oeo-aT-lxJ" firstAttribute="centerY" secondItem="JAa-Wn-OX0" secondAttribute="centerY" multiplier="0.7" id="h1C-vs-F62"/>
                 <constraint firstItem="Lyd-40-OgU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hVF-bV-SyS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JAa-Wn-OX0" secondAttribute="bottom" id="qXP-GJ-jmb"/>
                 <constraint firstItem="Lyd-40-OgU" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0580357" id="vad-KY-BiF"/>

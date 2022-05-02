@@ -11,6 +11,7 @@ class AttributesViewController: BaseViewController  {
     
     @IBOutlet weak var mTableV: UITableView!
     @IBOutlet weak var mSearchTxtFl: UITextField!
+    @IBOutlet weak var mActivityV: UIActivityIndicatorView!
     
     lazy var presenter = AttributesPresenter(delegate: self)
     private var valutas = [Valuta]()
@@ -18,7 +19,6 @@ class AttributesViewController: BaseViewController  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = presenter.getUsernameTitle()
         configureUI()
         configureTableView()
         presenter.getAttributes()
@@ -26,22 +26,25 @@ class AttributesViewController: BaseViewController  {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        mActivityV.startAnimating()
         navigationController?.navigationBar.isHidden = false
     }
 
     ///Configure UI
     func configureUI() {
+        title = presenter.getUsernameTitle()
         navigationController?.setNavigationBarBackground(color: Constant.Colors.main_color)
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.barTintColor = .white
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: Constant.Strings.logout, style: .plain, target: self, action: #selector(logoutTapped))
+        
 
     }
     
     ///Configure table view
     func configureTableView() {
-        //view.addSubview(tableView)
+        
         mTableV.separatorColor = .clear
         mTableV.register(AttributeTableViewCell.nib(), forCellReuseIdentifier: AttributeTableViewCell.identifier)
         mTableV.delegate = self
@@ -108,24 +111,27 @@ extension AttributesViewController: AttributesPresenterDelegate {
     
     ///Show  Login view
     func showLogin() {
+        
         let vc = LoginViewController(nibName: Constant.NibNames.login, bundle: getBundle(myClass: LoginViewController.self))
         self.navigationController?.pushViewController(vc, animated: true)
     }
         
     ///Present  attributes on table view
     func presentAttributes(valutas: [Valuta]) {
+        
         self.valutas = valutas
         DispatchQueue.main.async {
             self.mTableV.reloadData()
+            self.mActivityV.startAnimating()
         }
     }
     
     
     ///Will show details view controller
     func presentDetails(valuta: Valuta) {
+        
         let detailsVC = DetailsViewController(nibName: Constant.NibNames.details, bundle: getBundle(myClass: DetailsViewController.self))
         detailsVC.presenter.receiveDetails(valuta: valuta)
-        
         self.navigationController?.pushViewController(detailsVC, animated: true)
 
     }
