@@ -122,7 +122,7 @@ extension AttributesViewController: AttributesPresenterDelegate {
         self.valutas = valutas
         DispatchQueue.main.async {
             self.mTableV.reloadData()
-            self.mActivityV.startAnimating()
+            self.mActivityV.stopAnimating()
         }
     }
     
