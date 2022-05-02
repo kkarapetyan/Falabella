@@ -21,11 +21,11 @@ s.dependency 'Alamofire'
 s.dependency 'CryptoSwift'
 
 s.source_files = "Falabella/**/*.{swift, xib, png}"
+s.resources = "Falabella/*.{xcdatamodeld, xib, png, json}"
 s.resource_bundles = {
     'Falabella' => ['Pod/**/*.xib']
   }
 
-s.resources = "Falabella/*.xcdatamodeld"
 
 
 s.swift_version = "4.2"
