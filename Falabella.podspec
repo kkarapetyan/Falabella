@@ -23,7 +23,7 @@ s.dependency 'CryptoSwift'
 s.source_files = "Falabella/**/*.{swift, xib, png}"
 s.resources = "Falabella/*.{xcdatamodeld, xib, png, json}"
 s.resource_bundles = {
-   'Falabella' => ['/Users/karinekarapetyan/Desktop/Falabella/**/*.xib']
+   'Falabella' => ['Falabella/**/*.xib']
 }
 
 
