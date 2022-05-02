@@ -18,6 +18,13 @@ class LoginViewController: BaseViewController {
     
     lazy var presenter = LoginPresenter(delegate: self)
 
+    public init() {
+        super.init(nibName: Constant.NibNames.login, bundle: Bundle(for: LoginViewController.self))
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: -- Life cycle
     override func viewDidLoad() {
