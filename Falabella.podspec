@@ -23,7 +23,7 @@ s.dependency 'CryptoSwift'
 s.source_files = "Falabella/**/*.{swift, xib, png}"
 s.resources = "Falabella/*.{xcdatamodeld, xib, png, json}"
 s.resource_bundles = {
-   'SomeBundleName' => ['YourCocoaPodProjectDir/Classes/**/*.{storyboard,xib}']
+   'Falabella' => ['/Users/karinekarapetyan/Desktop/Falabella/Classes/**/*.{storyboard,xib}']
 }
 
 
