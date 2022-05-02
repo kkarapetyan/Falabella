@@ -76,7 +76,7 @@ extension LoginViewController: LoginPresenterDelegate {
    /// Show registration screen
     func showSignUp() {
         
-        let vc = SignUpViewController(nibName: Constant.NibNames.signUp, bundle: getBundleURL(type: SignUpViewController.self))
+        let vc = SignUpViewController(nibName: Constant.NibNames.signUp, bundle: getBundleURL(myClass: SignUpViewController.self))
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -91,7 +91,7 @@ extension LoginViewController: LoginPresenterDelegate {
     /// Show attributes  screen
     func showAttributes() {
         
-        let vc = AttributesViewController(nibName: Constant.NibNames.attributes, bundle: getBundleURL(type: AttributesViewController.self))
+        let vc = AttributesViewController(nibName: Constant.NibNames.attributes, bundle: getBundleURL(myClass: AttributesViewController.self))
         self.navigationController?.pushViewController(vc, animated: true)
     }
    
