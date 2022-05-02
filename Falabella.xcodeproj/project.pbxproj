@@ -19,6 +19,12 @@
 		563C4E16281F71C8004A1986 /* AttributeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 563C4E13281F71C8004A1986 /* AttributeTableViewCell.xib */; };
 		563C4E18281F71C8004A1986 /* AttributeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C4E14281F71C8004A1986 /* AttributeTableViewCell.swift */; };
 		563C4E19281F71C8004A1986 /* AttributeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C4E14281F71C8004A1986 /* AttributeTableViewCell.swift */; };
+		5681925628203A8100E14FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681925528203A8100E14FBB /* AppDelegate.swift */; };
+		5681925828203A8100E14FBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681925728203A8100E14FBB /* SceneDelegate.swift */; };
+		5681925A28203A8100E14FBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681925928203A8100E14FBB /* ViewController.swift */; };
+		5681925D28203A8100E14FBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5681925B28203A8100E14FBB /* Main.storyboard */; };
+		5681925F28203A8400E14FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5681925E28203A8400E14FBB /* Assets.xcassets */; };
+		5681926228203A8400E14FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5681926028203A8400E14FBB /* LaunchScreen.storyboard */; };
 		56BBA1AB281ECD050058DCE3 /* Falabella.docc in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA1AA281ECD050058DCE3 /* Falabella.docc */; };
 		56BBA1B1281ECD050058DCE3 /* Falabella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BBA1A6281ECD050058DCE3 /* Falabella.framework */; };
 		56BBA1B6281ECD050058DCE3 /* FalabellaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA1B5281ECD050058DCE3 /* FalabellaTests.swift */; };
@@ -89,6 +95,14 @@
 		563C4E0B281F70DA004A1986 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		563C4E13281F71C8004A1986 /* AttributeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributeTableViewCell.xib; sourceTree = "<group>"; };
 		563C4E14281F71C8004A1986 /* AttributeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeTableViewCell.swift; sourceTree = "<group>"; };
+		5681925328203A8100E14FBB /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5681925528203A8100E14FBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5681925728203A8100E14FBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5681925928203A8100E14FBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5681925C28203A8100E14FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5681925E28203A8400E14FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5681926128203A8400E14FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5681926328203A8400E14FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56BBA1A6281ECD050058DCE3 /* Falabella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Falabella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56BBA1A9281ECD050058DCE3 /* Falabella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Falabella.h; sourceTree = "<group>"; };
 		56BBA1AA281ECD050058DCE3 /* Falabella.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Falabella.docc; sourceTree = "<group>"; };
@@ -122,6 +136,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5681925028203A8100E14FBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56BBA1A3281ECD050058DCE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,11 +179,26 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		5681925428203A8100E14FBB /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				5681925528203A8100E14FBB /* AppDelegate.swift */,
+				5681925728203A8100E14FBB /* SceneDelegate.swift */,
+				5681925928203A8100E14FBB /* ViewController.swift */,
+				5681925B28203A8100E14FBB /* Main.storyboard */,
+				5681925E28203A8400E14FBB /* Assets.xcassets */,
+				5681926028203A8400E14FBB /* LaunchScreen.storyboard */,
+				5681926328203A8400E14FBB /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		56BBA19C281ECD050058DCE3 = {
 			isa = PBXGroup;
 			children = (
 				56BBA1A8281ECD050058DCE3 /* Falabella */,
 				56BBA1B4281ECD050058DCE3 /* FalabellaTests */,
+				5681925428203A8100E14FBB /* Example */,
 				56BBA1A7281ECD050058DCE3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -172,6 +208,7 @@
 			children = (
 				56BBA1A6281ECD050058DCE3 /* Falabella.framework */,
 				56BBA1B0281ECD050058DCE3 /* FalabellaTests.xctest */,
+				5681925328203A8100E14FBB /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -420,6 +457,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5681925228203A8100E14FBB /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5681926428203A8400E14FBB /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				5681924F28203A8100E14FBB /* Sources */,
+				5681925028203A8100E14FBB /* Frameworks */,
+				5681925128203A8100E14FBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = 5681925328203A8100E14FBB /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		56BBA1A5281ECD050058DCE3 /* Falabella */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56BBA1BA281ECD050058DCE3 /* Build configuration list for PBXNativeTarget "Falabella" */;
@@ -466,6 +520,9 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					5681925228203A8100E14FBB = {
+						CreatedOnToolsVersion = 13.3;
+					};
 					56BBA1A5281ECD050058DCE3 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -489,11 +546,22 @@
 			targets = (
 				56BBA1A5281ECD050058DCE3 /* Falabella */,
 				56BBA1AF281ECD050058DCE3 /* FalabellaTests */,
+				5681925228203A8100E14FBB /* Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5681925128203A8100E14FBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5681926228203A8400E14FBB /* LaunchScreen.storyboard in Resources */,
+				5681925F28203A8400E14FBB /* Assets.xcassets in Resources */,
+				5681925D28203A8100E14FBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56BBA1A4281ECD050058DCE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -521,6 +589,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5681924F28203A8100E14FBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5681925A28203A8100E14FBB /* ViewController.swift in Sources */,
+				5681925628203A8100E14FBB /* AppDelegate.swift in Sources */,
+				5681925828203A8100E14FBB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56BBA1A2281ECD050058DCE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,7 +674,80 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		5681925B28203A8100E14FBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5681925C28203A8100E14FBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5681926028203A8400E14FBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5681926128203A8400E14FBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		5681926528203A8400E14FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "Karine-Karapetyan.Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5681926628203A8400E14FBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "Karine-Karapetyan.Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		56BBA1B8281ECD050058DCE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -735,7 +886,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "Karine-Karapetyan.Falabella";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -763,7 +914,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "Karine-Karapetyan.Falabella";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -808,6 +959,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5681926428203A8400E14FBB /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5681926528203A8400E14FBB /* Debug */,
+				5681926628203A8400E14FBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		56BBA1A0281ECD050058DCE3 /* Build configuration list for PBXProject "Falabella" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
