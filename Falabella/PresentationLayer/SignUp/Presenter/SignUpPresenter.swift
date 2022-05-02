@@ -21,11 +21,12 @@ class SignUpPresenter {
     var user: User?
     var errMessage: String?
     
-    //MARK -- init
+    //MARK -- Initializer
     init(delegate: SignUpPresenterDelegate) {
         self.delegate = delegate
     }
-    
+   
+    //MARK: - Methods
     ///Did tap sign up button
     public func didTapSignUp(name: String?,
                              email: String?,

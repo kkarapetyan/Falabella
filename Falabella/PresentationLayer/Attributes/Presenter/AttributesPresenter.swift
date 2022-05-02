@@ -28,7 +28,7 @@ class AttributesPresenter {
         self.delegate = delegate
     }
     
-    
+    // MARK: -- Methods
     public func getAttributes() {
 
         NetworkManager.request(type: Data.self) { [weak self] result in

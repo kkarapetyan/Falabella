@@ -32,6 +32,8 @@ class SignUpViewController: BaseViewController {
         navigationController?.navigationBar.isHidden = false
     }
     
+    //MARK: - Methods
+
     func configureUI() {
         self.navigationController?.setNavigationBarBackground(color: Constant.Colors.main_color)
         navigationController?.navigationBar.tintColor = .white
@@ -40,7 +42,7 @@ class SignUpViewController: BaseViewController {
 
     }
 
-
+    //MARK: -- Actions
     @IBAction func signUp(_ sender: UIButton) {
         presenter.didTapSignUp(name: mUsernameTxtFl.text,
                                email: mEmailTxtFl.text,

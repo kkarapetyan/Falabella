@@ -19,12 +19,13 @@ class DetailsViewController: BaseViewController {
     
     lazy var presenter = DetailsPresenter(delegate: self)
 
-    //MARK: -- Life ciyle
+    //MARK: -- Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
     }
     
+    //MARK: - Methods
     func configureUI() {
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         navigationController?.navigationBar.topItem?.backButtonTitle = ""

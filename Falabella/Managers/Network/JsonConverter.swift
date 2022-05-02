@@ -50,23 +50,17 @@ final class JsonConverter<T: Decodable> : NSObject {
     
     static func parsObjectToData(data: Any) -> Data?  {
         
-        
-      //  do {
-            if let dataJson = try?  JSONSerialization.data(
-                withJSONObject: data,
-                options: .prettyPrinted
-            ),
-               let _ = String(data: dataJson,
-                                        encoding: String.Encoding.ascii) {
-                return dataJson
-            }
-//        } catch let error as NSError {
-//            print("Failed to load: \(error.localizedDescription)")
-//            return nil
-//        }
+        if let dataJson = try?  JSONSerialization.data(
+            withJSONObject: data,
+            options: .prettyPrinted
+        ),
+           let _ = String(data: dataJson,
+                          encoding: String.Encoding.ascii) {
+            return dataJson
+        }
         return nil
     }
-        
+    
 
     
 }

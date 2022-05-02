@@ -48,19 +48,7 @@ class CoreDataManager {
      }
 
 
-
-//    let persistentContainer: NSPersistentContainer = {
-//
-//        let container = NSPersistentContainer(name: "UserData")
-//        container.loadPersistentStores { (storeDescription, error) in
-//            if let err = error {
-//                fatalError("Loadinf of store failed \(err)")
-//            }
-//        }
-//        return container
-//    }()
-
-
+    ///Save context
     func saveContext () {
         let context = persistentContainer?.viewContext
         if ((context?.hasChanges) != nil) {
@@ -75,6 +63,7 @@ class CoreDataManager {
            }
        }
 
+    
     ///Creat new record if doesn't exist
     func creatUserdetails(name: String, email: String, password: String, didResult: @escaping (AuthStatus) -> ())  {
 
@@ -120,6 +109,7 @@ class CoreDataManager {
         return nil
     }
 
+    ///Fetch records with email and password
     func fetchUserdetails(withEmail email: String, password: String?) -> Userdetails? {
 
         let context = persistentContainer?.viewContext

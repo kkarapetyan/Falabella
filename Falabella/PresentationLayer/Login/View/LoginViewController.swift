@@ -33,6 +33,7 @@ class LoginViewController: BaseViewController {
         mPasswordTxtFl.text = nil
     }
     
+    //MARK: -- Methods
 
     private func configureDelegate() {
         mEmailTxtFl.delegate = self
@@ -70,6 +71,7 @@ extension LoginViewController: UITextFieldDelegate {
     }
 }
 
+//MARK: -- LoginPresenter Delegate
 extension LoginViewController: LoginPresenterDelegate {
    
     

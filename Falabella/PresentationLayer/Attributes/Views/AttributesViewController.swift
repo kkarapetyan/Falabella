@@ -9,6 +9,7 @@ import UIKit
 
 class AttributesViewController: BaseViewController  {
     
+    //MARK: -- Outlets
     @IBOutlet weak var mTableV: UITableView!
     @IBOutlet weak var mSearchTxtFl: UITextField!
     @IBOutlet weak var mActivityV: UIActivityIndicatorView!
@@ -17,19 +18,21 @@ class AttributesViewController: BaseViewController  {
     private var valutas = [Valuta]()
     private var filteredData = [Valuta]()
 
+    //MARK: -- Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
         configureTableView()
+        mActivityV.startAnimating()
         presenter.getAttributes()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        mActivityV.startAnimating()
         navigationController?.navigationBar.isHidden = false
     }
 
+    //MARK: -- Methods
     ///Configure UI
     func configureUI() {
         title = presenter.getUsernameTitle()
@@ -58,7 +61,7 @@ class AttributesViewController: BaseViewController  {
 }
 
 
-//MARK -- UITableViewDelegate & UITableViewDataSource
+//MARK: -- UITableViewDelegate & UITableViewDataSource
 extension AttributesViewController: UITableViewDelegate, UITableViewDataSource {
     
     // UITableViewDataSource

@@ -11,10 +11,9 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    //Get bundle
     func getBundle(myClass: AnyClass) -> Bundle? {
         
         let frameworkBundle = Bundle(for: myClass.self)
