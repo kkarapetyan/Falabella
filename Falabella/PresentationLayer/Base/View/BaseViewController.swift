@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
     
     func getBundle(myClass: AnyClass) -> Bundle? {
         
-        let frameworkBundle = Bundle(for: myClass.self)
+        let frameworkBundle = Bundle(for: myClass.self as! AnyClass)
         let bundleURL =  frameworkBundle.resourceURL?.appendingPathComponent("Falabella.bundle")
         guard let url = bundleURL else { return nil}
         return Bundle(url: url)
