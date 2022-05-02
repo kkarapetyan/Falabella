@@ -29,12 +29,7 @@
 		56BBA1B1281ECD050058DCE3 /* Falabella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BBA1A6281ECD050058DCE3 /* Falabella.framework */; };
 		56BBA1B6281ECD050058DCE3 /* FalabellaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA1B5281ECD050058DCE3 /* FalabellaTests.swift */; };
 		56BBA1B7281ECD050058DCE3 /* Falabella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BBA1A9281ECD050058DCE3 /* Falabella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56BBA1C8281ECE790058DCE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA1C7281ECE790058DCE3 /* AppDelegate.swift */; };
-		56BBA1CA281ECE790058DCE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA1C9281ECE790058DCE3 /* SceneDelegate.swift */; };
-		56BBA1CC281ECE790058DCE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA1CB281ECE790058DCE3 /* ViewController.swift */; };
-		56BBA1CF281ECE790058DCE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BBA1CD281ECE790058DCE3 /* Main.storyboard */; };
 		56BBA1D1281ECE7C0058DCE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56BBA1D0281ECE7C0058DCE3 /* Assets.xcassets */; };
-		56BBA1D4281ECE7C0058DCE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BBA1D2281ECE7C0058DCE3 /* LaunchScreen.storyboard */; };
 		56BBA1DA281EDF130058DCE3 /* Falabella.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA1D9281EDF130058DCE3 /* Falabella.swift */; };
 		56BBA201281F07430058DCE3 /* UINavigationController+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA1FD281F07420058DCE3 /* UINavigationController+Color.swift */; };
 		56BBA202281F07430058DCE3 /* UINavigationController+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA1FD281F07420058DCE3 /* UINavigationController+Color.swift */; };
@@ -130,13 +125,7 @@
 		56BBA1B0281ECD050058DCE3 /* FalabellaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FalabellaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56BBA1B5281ECD050058DCE3 /* FalabellaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalabellaTests.swift; sourceTree = "<group>"; };
 		56BBA1C5281ECE790058DCE3 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		56BBA1C7281ECE790058DCE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56BBA1C9281ECE790058DCE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		56BBA1CB281ECE790058DCE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		56BBA1CE281ECE790058DCE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56BBA1D0281ECE7C0058DCE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		56BBA1D3281ECE7C0058DCE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		56BBA1D5281ECE7C0058DCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56BBA1D9281EDF130058DCE3 /* Falabella.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Falabella.swift; sourceTree = "<group>"; };
 		56BBA1FD281F07420058DCE3 /* UINavigationController+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Color.swift"; sourceTree = "<group>"; };
 		56BBA1FF281F07430058DCE3 /* String+AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+AES.swift"; sourceTree = "<group>"; };
@@ -212,7 +201,6 @@
 			children = (
 				56BBA1A8281ECD050058DCE3 /* Falabella */,
 				56BBA1B4281ECD050058DCE3 /* FalabellaTests */,
-				56BBA1C6281ECE790058DCE3 /* Example */,
 				56BBA1A7281ECD050058DCE3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -248,18 +236,6 @@
 				56BBA1B5281ECD050058DCE3 /* FalabellaTests.swift */,
 			);
 			path = FalabellaTests;
-			sourceTree = "<group>";
-		};
-		56BBA1C6281ECE790058DCE3 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				56BBA28C281F07DF0058DCE3 /* SupportFiles */,
-				56BBA1C7281ECE790058DCE3 /* AppDelegate.swift */,
-				56BBA1C9281ECE790058DCE3 /* SceneDelegate.swift */,
-				56BBA1CB281ECE790058DCE3 /* ViewController.swift */,
-				56BBA1CD281ECE790058DCE3 /* Main.storyboard */,
-			);
-			path = Example;
 			sourceTree = "<group>";
 		};
 		56BBA1FB281F07080058DCE3 /* Helper */ = {
@@ -469,15 +445,6 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		56BBA28C281F07DF0058DCE3 /* SupportFiles */ = {
-			isa = PBXGroup;
-			children = (
-				56BBA1D5281ECE7C0058DCE3 /* Info.plist */,
-				56BBA1D2281ECE7C0058DCE3 /* LaunchScreen.storyboard */,
-			);
-			path = SupportFiles;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -616,12 +583,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				56BBA26E281F078B0058DCE3 /* LoginViewController.xib in Resources */,
-				56BBA1D4281ECE7C0058DCE3 /* LaunchScreen.storyboard in Resources */,
 				563C4E17281F71C8004A1986 /* AttributeTableViewCell.xib in Resources */,
 				56BBA1D1281ECE7C0058DCE3 /* Assets.xcassets in Resources */,
 				56BBA262281F078B0058DCE3 /* AttributesViewController.xib in Resources */,
 				56BBA24A281F078B0058DCE3 /* SignUpViewController.xib in Resources */,
-				56BBA1CF281ECE790058DCE3 /* Main.storyboard in Resources */,
 				563C4E0E281F70DA004A1986 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,7 +668,6 @@
 				563C4E11281F70DA004A1986 /* DetailsViewController.swift in Sources */,
 				56BBA209281F07430058DCE3 /* String+AES.swift in Sources */,
 				56BBA259281F078B0058DCE3 /* Attributes.swift in Sources */,
-				56BBA1CC281ECE790058DCE3 /* ViewController.swift in Sources */,
 				56BBA268281F078B0058DCE3 /* LoginPresenter.swift in Sources */,
 				56BBA296281F12A10058DCE3 /* UserData.xcdatamodeld in Sources */,
 				56BBA28B281F07C40058DCE3 /* CoreDataManager.swift in Sources */,
@@ -715,9 +679,7 @@
 				56BBA244281F078B0058DCE3 /* UserRegister.swift in Sources */,
 				56BBA247281F078B0058DCE3 /* SignUpViewController.swift in Sources */,
 				56BBA282281F07C40058DCE3 /* NetworkManager.swift in Sources */,
-				56BBA1C8281ECE790058DCE3 /* AppDelegate.swift in Sources */,
 				56BBA274281F078B0058DCE3 /* BaseViewController.swift in Sources */,
-				56BBA1CA281ECE790058DCE3 /* SceneDelegate.swift in Sources */,
 				563C4E04281F6F5A004A1986 /* String.swift in Sources */,
 				56BBA288281F07C40058DCE3 /* UserDefaultsManager.swift in Sources */,
 				56BBA265281F078B0058DCE3 /* AttributesViewController.swift in Sources */,
@@ -737,25 +699,6 @@
 			targetProxy = 56BBA1B2281ECD050058DCE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		56BBA1CD281ECE790058DCE3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56BBA1CE281ECE790058DCE3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		56BBA1D2281ECE7C0058DCE3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56BBA1D3281ECE7C0058DCE3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		56BBA1B8281ECD050058DCE3 /* Debug */ = {
@@ -985,7 +928,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "Karine-Karapetyan.Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1013,7 +956,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.3;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "Karine-Karapetyan.Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

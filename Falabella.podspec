@@ -6,7 +6,7 @@ s.name = "Falabella"
 s.summary = "Falabella is a library for custom authentication"
 s.requires_arc = true
 
-s.version = "1.0.3"
+s.version = "1.0.4"
 
 s.author = { "Karine Karapetyan" => "karapetyankarine87@gmail.com" }
 
@@ -20,7 +20,7 @@ s.framework = "UIKit"
 s.dependency 'Alamofire'
 s.dependency 'CryptoSwift'
 
-s.source_files = "Falabella/**/*.{swift}"
+s.source_files = "Falabella/**/*.{swift, xib, png}"
 s.resources = "Falabella/*.xcdatamodeld"
 
 
