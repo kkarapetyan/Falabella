@@ -11,8 +11,9 @@ class AttributeTableViewCell: UITableViewCell {
     
     static let identifier = "AttributeTableViewCell"
     static func nib() -> UINib {
-        let bundle = Bundle(for: Falabella.self)
-        return UINib(nibName: identifier, bundle: bundle)
+        let frameworkBundle = Bundle(for: AttributeTableViewCell.self)
+        let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("Falabella.bundle")
+        return UINib(nibName: identifier, bundle: Bundle(url: bundleURL ? ""))
     }
 
     @IBOutlet weak var mNameLb: UILabel!

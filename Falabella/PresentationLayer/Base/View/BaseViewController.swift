@@ -15,6 +15,9 @@ class BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    func getBundleURL<T: Hashable>(type: T) -> URL? {
+        let frameworkBundle = Bundle(for: T.self as! AnyClass)
+        return frameworkBundle.resourceURL?.appendingPathComponent("Falabella.bundle")
+    }
 
 }
