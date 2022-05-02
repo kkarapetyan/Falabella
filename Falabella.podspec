@@ -21,7 +21,7 @@ s.dependency 'Alamofire'
 s.dependency 'CryptoSwift'
 
 s.source_files = "Falabella/**/*.{swift}"
-s.resource_bundles = "Falabella/*.xcdatamodeld"
+s.resources = "Falabella/*.xcdatamodeld"
 
 
 s.swift_version = "4.2"
