@@ -67,16 +67,16 @@ class SignUpPresenter {
        
         let pass = try! password.aesEncrypt()
 
-//        CoreDataManager.shared.creatUserdetails(name: name, email: email, password: pass) { [unowned self] status in
-//            
-//            switch status {
-//            case .success:
-//                self.delegate?.displayAlert(message: Constant.Strings.registerSccessful)
-//            case .failed(let error):
-//                // show sign up error message
-//                self.delegate?.showSignUpError(errMessage: error)
-//            }
-//        }
+        CoreDataManager.shared.creatUserdetails(name: name, email: email, password: pass) { [unowned self] status in
+            
+            switch status {
+            case .success:
+                self.delegate?.displayAlert(message: Constant.Strings.registerSccessful)
+            case .failed(let error):
+                // show sign up error message
+                self.delegate?.showSignUpError(errMessage: error)
+            }
+        }
         
     }
 }
