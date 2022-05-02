@@ -11,7 +11,8 @@ class AttributeTableViewCell: UITableViewCell {
     
     static let identifier = "AttributeTableViewCell"
     static func nib() -> UINib {
-        return UINib(nibName: identifier, bundle: nil)
+        let bundle = Bundle(for: Falabella.self)
+        return UINib(nibName: identifier, bundle: bundle)
     }
 
     @IBOutlet weak var mNameLb: UILabel!

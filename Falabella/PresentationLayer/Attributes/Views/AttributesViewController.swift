@@ -108,7 +108,7 @@ extension AttributesViewController: AttributesPresenterDelegate {
     
     ///Show  Login view
     func showLogin() {
-        let vc = LoginViewController(nibName: Constant.NibNames.login, bundle: nil)
+        let vc = LoginViewController(nibName: Constant.NibNames.login, bundle: Bundle(for: Falabella.self))
         self.navigationController?.pushViewController(vc, animated: true)
     }
         
@@ -123,7 +123,7 @@ extension AttributesViewController: AttributesPresenterDelegate {
     
     ///Will show details view controller
     func presentDetails(valuta: Valuta) {
-        let detailsVC = DetailsViewController(nibName: Constant.NibNames.details, bundle: nil)
+        let detailsVC = DetailsViewController(nibName: Constant.NibNames.details, bundle: Bundle(for: Falabella.self))
         detailsVC.presenter.receiveDetails(valuta: valuta)
         
         self.navigationController?.pushViewController(detailsVC, animated: true)

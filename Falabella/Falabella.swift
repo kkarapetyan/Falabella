@@ -16,7 +16,8 @@ public final class Falabella {
     
    public func getCurrentViewController() -> UIViewController {
        print ("Modul is working")
-       return UserDefaultsManager.shared.isLoggedIn() ? AttributesViewController(nibName: Constant.NibNames.attributes, bundle: nil) : LoginViewController(nibName: Constant.NibNames.login, bundle: nil)
+       let bundle = Bundle(for: Falabella.self)
+       return UserDefaultsManager.shared.isLoggedIn() ? AttributesViewController(nibName: Constant.NibNames.attributes, bundle: bundle) : LoginViewController(nibName: Constant.NibNames.login, bundle: bundle)
        
 //       let vc = UIViewController
 //       vc = UserDefaultsManager.shared.isLoggedIn() ? AttributesViewController(nibName: Constant.NibNames.attributes, bundle: nil) : LoginViewController(nibName: Constant.NibNames.login, bundle: nil)
