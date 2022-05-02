@@ -2,7 +2,7 @@
 Cocoa Pods library written in Swift
 
 
-##Component Libraries
+## Component Libraries
 ```
 Alamofire
 CryptoSwift
@@ -10,7 +10,9 @@ CryptoSwift
 ```
 
 
-##Installation
+## Installation
+```
 pod 'Falabella', :git => 'https://github.com/kkarapetyan/Falabella.git'
+```
 
-##Exa
+
