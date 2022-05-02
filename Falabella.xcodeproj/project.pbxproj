@@ -236,6 +236,7 @@
 				56BBA1FB281F07080058DCE3 /* Helper */,
 				56BBA1A9281ECD050058DCE3 /* Falabella.h */,
 				56BBA1AA281ECD050058DCE3 /* Falabella.docc */,
+				56BBA292281F12A10058DCE3 /* UserData.xcdatamodeld */,
 				56BBA1D9281EDF130058DCE3 /* Falabella.swift */,
 			);
 			path = Falabella;
@@ -464,7 +465,6 @@
 			isa = PBXGroup;
 			children = (
 				56BBA27C281F07C30058DCE3 /* CoreDataManager.swift */,
-				56BBA292281F12A10058DCE3 /* UserData.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";

@@ -79,7 +79,7 @@ class CoreDataManager {
     func creatUserdetails(name: String, email: String, password: String, didResult: @escaping (AuthStatus) -> ())  {
 
         //Check if email already exist
-        let fetchRequest = fetchUserdetails(withEmail: email, password: nil)
+        let fetchRequest = fetchUserdetails(withEmail: email, password: "")
         if let _ = fetchRequest {
             didResult(AuthStatus.failed(Constant.Strings.accountExist))
 
