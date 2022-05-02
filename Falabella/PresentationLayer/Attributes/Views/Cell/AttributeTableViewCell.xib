@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ong-07-Xc4">
-                        <rect key="frame" x="7.5" y="11.5" width="145" height="21"/>
+                        <rect key="frame" x="7.5" y="12" width="145" height="20"/>
                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.17483274804062249" blue="0.45179924997342685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -34,10 +34,11 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ong-07-Xc4" secondAttribute="bottom" constant="12" id="1HD-Y3-7zv"/>
                     <constraint firstItem="Ong-07-Xc4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.5" id="E8m-xj-eYI"/>
                     <constraint firstItem="bWM-6n-87m" firstAttribute="centerY" secondItem="Ong-07-Xc4" secondAttribute="centerY" id="H5v-TN-ooz"/>
+                    <constraint firstItem="Ong-07-Xc4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="M9x-Kv-teQ"/>
                     <constraint firstItem="Ong-07-Xc4" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.453125" id="OSI-WA-oh9"/>
-                    <constraint firstItem="Ong-07-Xc4" firstAttribute="height" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.477273" id="QYb-4w-e6d"/>
                     <constraint firstItem="Ong-07-Xc4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Tta-9e-efH"/>
                     <constraint firstItem="bWM-6n-87m" firstAttribute="leading" secondItem="Ong-07-Xc4" secondAttribute="trailing" multiplier="1.1" id="zN1-jN-Rzb"/>
                 </constraints>

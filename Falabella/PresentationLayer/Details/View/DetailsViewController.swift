@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailsViewController: UIViewController {
+class DetailsViewController: BaseViewController {
 
     //MARK: -- Outlets
     @IBOutlet weak var mCodeLb: UILabel!
@@ -27,6 +27,7 @@ class DetailsViewController: UIViewController {
     
     func configureUI() {
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        navigationController?.navigationBar.topItem?.backButtonTitle = ""
         mContentStackV.layer.cornerRadius = 5
     }
    
@@ -37,10 +38,13 @@ extension DetailsViewController: DetailsPresenterDelegate {
     /// Show details
     func presentDetails(valuta: Valuta) {
         
-        DispatchQueue.main.async {
-            
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else {return}
             self.mCodeLb?.text = valuta.codigo
-            self.mNameLb?.text = "Test"
+            self.mNameLb?.text = valuta.nombre
+            self.mUniteMeasureLb.text = valuta.unidad_medida
+            self.mDateLb.text = valuta.fecha.convertIsoDateFormater()
+            self.mValueLb.text = "\(valuta.valor)"
         }
 
        

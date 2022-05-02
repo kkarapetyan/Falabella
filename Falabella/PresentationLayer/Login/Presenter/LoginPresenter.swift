@@ -40,12 +40,12 @@ class LoginPresenter {
         } else  {
             
             let pass = try! password!.aesEncrypt()
-           guard let result = CoreDataManager.shared.fetchUserdetails(withEmail: email!,
+            guard let result = CoreDataManager.shared?.fetchUserdetails(withEmail: email!,
                                                                       password: pass ) else {
                delegate?.showLoginError(errMessage: Constant.Strings.invalidLogin)
                return
            }
-
+            
             saveToUserDefault(user: result)
             delegate?.showAttributes()
             
@@ -54,7 +54,7 @@ class LoginPresenter {
     
     ///Save user information to userDefault
     private func saveToUserDefault(user: Userdetails) {
-
+        
         UserDefaultsManager.shared.store(user.email, key: Constant.Keys.email)
         UserDefaultsManager.shared.store(user.password, key: Constant.Keys.password)
         UserDefaultsManager.shared.store(user.name, key: Constant.Keys.userName)

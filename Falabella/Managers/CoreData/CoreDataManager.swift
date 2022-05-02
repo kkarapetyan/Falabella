@@ -62,10 +62,10 @@ class CoreDataManager {
 
 
     func saveContext () {
-           let context = persistentContainer.viewContext
-           if context.hasChanges {
+        let context = persistentContainer?.viewContext
+        if ((context?.hasChanges) != nil) {
                do {
-                   try context.save()
+                   try context?.save()
                } catch {
                    // Replace this implementation with code to handle the error appropriately.
                    // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -85,7 +85,8 @@ class CoreDataManager {
 
         } else {
             // insert new account if doesn't exist
-            let context = persistentContainer.viewContext
+            let context = persistentContainer?.viewContext
+            guard let context = context else { return }
             let userdetails = NSEntityDescription.insertNewObject(forEntityName: "Userdetails", into: context) as! Userdetails
 
             userdetails.name = name
@@ -107,11 +108,11 @@ class CoreDataManager {
 
     ///Fetch records
     func fetchUserdetails() -> [Userdetails]? {
-        let context = persistentContainer.viewContext
+        let context = persistentContainer?.viewContext
         let fetchRequest = NSFetchRequest<Userdetails>(entityName: "Userdetails")
 
         do {
-            let details = try context.fetch(fetchRequest)
+            let details = try context?.fetch(fetchRequest)
             return details
         } catch let fetchError {
             print("Failed to fetch companies: \(fetchError)")
@@ -121,7 +122,7 @@ class CoreDataManager {
 
     func fetchUserdetails(withEmail email: String, password: String?) -> Userdetails? {
 
-        let context = persistentContainer.viewContext
+        let context = persistentContainer?.viewContext
         let fetchRequest = NSFetchRequest<Userdetails>(entityName: "Userdetails")
         fetchRequest.fetchLimit = 1
 
@@ -132,8 +133,8 @@ class CoreDataManager {
         }
 
         do {
-            let details = try context.fetch(fetchRequest)
-            return details.first
+            let details = try context?.fetch(fetchRequest)
+            return details?.first
 
         } catch let fetchError {
             print("Failed to fetch companies: \(fetchError)")
@@ -144,10 +145,10 @@ class CoreDataManager {
     ///Update records
     func updateUserdetails(userdetails: Userdetails) {
 
-        let context = persistentContainer.viewContext
+        let context = persistentContainer?.viewContext
 
         do {
-           try context.save()
+            try context?.save()
 
         } catch let createError {
             print("Failed to update: \(createError)")
@@ -157,11 +158,11 @@ class CoreDataManager {
     ///Delete records
     func deleteUserdetails(userdetails: Userdetails) {
 
-        let context = persistentContainer.viewContext
-        context.delete(userdetails)
+        let context = persistentContainer?.viewContext
+        context?.delete(userdetails)
 
         do {
-           try context.save()
+            try context?.save()
 
         } catch let saveError {
             print("Failed to delete: \(saveError)")

@@ -15,10 +15,11 @@ public final class Falabella {
     }
     
    public func openModule() {
+       print ("Modul is working")
        
-       let vc = UIViewController
-       vc = UserDefaultsManager.shared.isLoggedIn() ? AttributesViewController(nibName: Constant.NibNames.attributes, bundle: nil) : LoginViewController(nibName: Constant.NibNames.login, bundle: nil)
-       self.navigationController?.pushViewController(vc, animated: true)
+//       let vc = UIViewController
+//       vc = UserDefaultsManager.shared.isLoggedIn() ? AttributesViewController(nibName: Constant.NibNames.attributes, bundle: nil) : LoginViewController(nibName: Constant.NibNames.login, bundle: nil)
+//       self.navigationController?.pushViewController(vc, animated: true)
 
     }
     

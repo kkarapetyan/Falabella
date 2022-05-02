@@ -26,6 +26,6 @@ class AttributeTableViewCell: UITableViewCell {
    //Set cell information
     public func setCellInfo(item: Valuta) {
         self.mNameLb.text = item.nombre
-        self.mValueLb.text = "3737"
+        self.mValueLb.text = "\(item.valor)"
     }
 }

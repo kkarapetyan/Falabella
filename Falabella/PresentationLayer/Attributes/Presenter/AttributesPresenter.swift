@@ -28,50 +28,6 @@ class AttributesPresenter {
         self.delegate = delegate
     }
     
-//    public func getAttributes() {
-//        // "https://www.mindicador.cl/api"
-//        guard let url = URL(string: "https://www.mindicador.cl/api") else { return }
-//        let task = URLSession.shared.dataTask(with: url) { [ weak self] data, _, error in
-//            guard let data = data, error == nil else {
-//                return
-//            }
-//
-//            do {
-//                let attributes = try JSONDecoder().decode([Attributes].self, from: data)
-//                self?.attributes = attributes
-//                self?.delegate?.presentAttributes(attributes: attributes)
-//            }
-//            catch {
-//                print(error)
-//            }
-//        }
-//        task.resume()
-//    }
-    
-    
-//    public func getAttributes() {
-//
-//        NetworkManager.request(type: [Attributes].self) { [weak self] result in
-//            guard let self = self else { return }
-//
-//            switch result {
-//            case .success(let attributs):
-//                print("attributs = \(attributs)")
-//                self.delegate?.presentAttributes(attributes: attributs ?? [])
-//            case .failure(let err):
-//                if let err = err as? NetworkError {
-//                    switch err {
-//                    case .badRequest(let message):
-//                        print("ERROR: \(message)")
-//                    case .serverError:
-//                        print("Server Error!!")
-//                    }
-//                }
-//
-//            }
-//        }
-//    }
-    
     
     public func getAttributes() {
 
@@ -121,6 +77,7 @@ class AttributesPresenter {
         return String(format: Constant.Strings.helloUser, userName)
     }
     
+    ///Logout tapped
     public func didTapLogout() {
         UserDefaultsManager.shared.clean()
         delegate?.showLogin()
@@ -137,14 +94,12 @@ class AttributesPresenter {
         
         if (searchTxt == ""){
             filteredData = valutas
-            
         } else{
             
             filteredData = []
-            // you can do any kind of filtering here based on user input
-//            filteredData = attributes.filter{
-//                $0.name.lowercased().contains(searchTxt.lowercased())
-//            }
+            filteredData = valutas.filter{
+                $0.codigo.lowercased().contains(searchTxt.lowercased())
+            }
         }
         self.delegate?.presentAttributes(valutas: filteredData)
         

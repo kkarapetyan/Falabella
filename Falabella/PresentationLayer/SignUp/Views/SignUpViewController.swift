@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: BaseViewController {
 
     //MARK: -- Outlets
     @IBOutlet weak var mUsernameTxtFl: UITextField!
@@ -35,6 +35,7 @@ class SignUpViewController: UIViewController {
     func configureUI() {
         self.navigationController?.setNavigationBarBackground(color: Constant.Colors.main_color)
         navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.topItem?.backButtonTitle = ""
         mSignUpBtn.layer.cornerRadius = 3
 
     }

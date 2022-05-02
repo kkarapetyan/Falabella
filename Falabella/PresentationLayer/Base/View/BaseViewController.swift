@@ -16,10 +16,5 @@ class BaseViewController: UIViewController {
     }
     
 
-    func pushViewController(nibName: String) {
-        
-        let vc = UIViewController(nibName: nibName, bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
 
 }

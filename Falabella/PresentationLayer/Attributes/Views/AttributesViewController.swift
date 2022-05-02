@@ -7,16 +7,10 @@
 
 import UIKit
 
-class AttributesViewController: UIViewController  {
+class AttributesViewController: BaseViewController  {
     
     @IBOutlet weak var mTableV: UITableView!
     @IBOutlet weak var mSearchTxtFl: UITextField!
-    //    private var tableView: UITableView = {
-//        let table = UITableView()
-//        table.separatorColor = .clear
-//        table.register(AttributeTableViewCell.nib(), forCellReuseIdentifier: AttributeTableViewCell.identifier)
-//        return table
-//    } ()
     
     lazy var presenter = AttributesPresenter(delegate: self)
     private var valutas = [Valuta]()
@@ -72,8 +66,6 @@ extension AttributesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: AttributeTableViewCell.identifier, for: indexPath) as! AttributeTableViewCell
-//        cell.textLabel?.text = attributes[indexPath.row].nombre
-//        cell.detailTextLabel?.text =  "\(attributes[indexPath.row].valor)"
         cell.setCellInfo(item: valutas[indexPath.row])
         
         return cell
@@ -133,6 +125,7 @@ extension AttributesViewController: AttributesPresenterDelegate {
     func presentDetails(valuta: Valuta) {
         let detailsVC = DetailsViewController(nibName: Constant.NibNames.details, bundle: nil)
         detailsVC.presenter.receiveDetails(valuta: valuta)
+        
         self.navigationController?.pushViewController(detailsVC, animated: true)
 
     }
