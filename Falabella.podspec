@@ -6,7 +6,7 @@ s.name = "Falabella"
 s.summary = "Falabella is a library for custom authentication"
 s.requires_arc = true
 
-s.version = "1.0.4"
+s.version = "1.0.5"
 
 s.author = { "Karine Karapetyan" => "karapetyankarine87@gmail.com" }
 
@@ -23,7 +23,7 @@ s.dependency 'CryptoSwift'
 s.source_files = "Falabella/**/*.{swift, xib, png}"
 s.resources = "Falabella/*.{xcdatamodeld, xib, png, json}"
 s.resource_bundles = {
-   'Falabella' => ['/Users/karinekarapetyan/Desktop/Falabella/Classes/**/*.{storyboard,xib}']
+   'Falabella' => ['**/Classes/**/*.xib']
 }
 
 
