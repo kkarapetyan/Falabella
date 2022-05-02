@@ -30,8 +30,8 @@
             filePath = "Falabella/PresentationLayer/Login/View/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "showSignUp()"
             landmarkType = "7">
          </BreakpointContent>
