@@ -25,6 +25,13 @@
 		5681925D28203A8100E14FBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5681925B28203A8100E14FBB /* Main.storyboard */; };
 		5681925F28203A8400E14FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5681925E28203A8400E14FBB /* Assets.xcassets */; };
 		5681926228203A8400E14FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5681926028203A8400E14FBB /* LaunchScreen.storyboard */; };
+		5681927E282198E600E14FBB /* SignUpPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681927C282198E600E14FBB /* SignUpPresenterTest.swift */; };
+		5681927F282198E600E14FBB /* UserRegisterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681927D282198E600E14FBB /* UserRegisterTest.swift */; };
+		56819283282198ED00E14FBB /* LoginPesenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56819281282198ED00E14FBB /* LoginPesenterTest.swift */; };
+		56819284282198ED00E14FBB /* UserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56819282282198ED00E14FBB /* UserTest.swift */; };
+		56819287282198F300E14FBB /* DetailsPresentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56819286282198F300E14FBB /* DetailsPresentTest.swift */; };
+		5681928B282198FB00E14FBB /* AttributesPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56819289282198FB00E14FBB /* AttributesPresenterTest.swift */; };
+		5681928C282198FB00E14FBB /* ValutaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5681928A282198FB00E14FBB /* ValutaTest.swift */; };
 		56BBA1AB281ECD050058DCE3 /* Falabella.docc in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA1AA281ECD050058DCE3 /* Falabella.docc */; };
 		56BBA1B1281ECD050058DCE3 /* Falabella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BBA1A6281ECD050058DCE3 /* Falabella.framework */; };
 		56BBA1B6281ECD050058DCE3 /* FalabellaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BBA1B5281ECD050058DCE3 /* FalabellaTests.swift */; };
@@ -103,6 +110,13 @@
 		5681925E28203A8400E14FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5681926128203A8400E14FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5681926328203A8400E14FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5681927C282198E600E14FBB /* SignUpPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTest.swift; sourceTree = "<group>"; };
+		5681927D282198E600E14FBB /* UserRegisterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegisterTest.swift; sourceTree = "<group>"; };
+		56819281282198ED00E14FBB /* LoginPesenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPesenterTest.swift; sourceTree = "<group>"; };
+		56819282282198ED00E14FBB /* UserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTest.swift; sourceTree = "<group>"; };
+		56819286282198F300E14FBB /* DetailsPresentTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPresentTest.swift; sourceTree = "<group>"; };
+		56819289282198FB00E14FBB /* AttributesPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributesPresenterTest.swift; sourceTree = "<group>"; };
+		5681928A282198FB00E14FBB /* ValutaTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValutaTest.swift; sourceTree = "<group>"; };
 		56BBA1A6281ECD050058DCE3 /* Falabella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Falabella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56BBA1A9281ECD050058DCE3 /* Falabella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Falabella.h; sourceTree = "<group>"; };
 		56BBA1AA281ECD050058DCE3 /* Falabella.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Falabella.docc; sourceTree = "<group>"; };
@@ -193,6 +207,41 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		5681927B282198E600E14FBB /* SignUpTest */ = {
+			isa = PBXGroup;
+			children = (
+				5681927C282198E600E14FBB /* SignUpPresenterTest.swift */,
+				5681927D282198E600E14FBB /* UserRegisterTest.swift */,
+			);
+			path = SignUpTest;
+			sourceTree = "<group>";
+		};
+		56819280282198ED00E14FBB /* LoginTest */ = {
+			isa = PBXGroup;
+			children = (
+				56819281282198ED00E14FBB /* LoginPesenterTest.swift */,
+				56819282282198ED00E14FBB /* UserTest.swift */,
+			);
+			path = LoginTest;
+			sourceTree = "<group>";
+		};
+		56819285282198F300E14FBB /* DetailsTest */ = {
+			isa = PBXGroup;
+			children = (
+				56819286282198F300E14FBB /* DetailsPresentTest.swift */,
+			);
+			path = DetailsTest;
+			sourceTree = "<group>";
+		};
+		56819288282198FB00E14FBB /* AttributesTest */ = {
+			isa = PBXGroup;
+			children = (
+				56819289282198FB00E14FBB /* AttributesPresenterTest.swift */,
+				5681928A282198FB00E14FBB /* ValutaTest.swift */,
+			);
+			path = AttributesTest;
+			sourceTree = "<group>";
+		};
 		56BBA19C281ECD050058DCE3 = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +280,10 @@
 		56BBA1B4281ECD050058DCE3 /* FalabellaTests */ = {
 			isa = PBXGroup;
 			children = (
+				56819288282198FB00E14FBB /* AttributesTest */,
+				56819285282198F300E14FBB /* DetailsTest */,
+				56819280282198ED00E14FBB /* LoginTest */,
+				5681927B282198E600E14FBB /* SignUpTest */,
 				56BBA1B5281ECD050058DCE3 /* FalabellaTests.swift */,
 			);
 			path = FalabellaTests;
@@ -636,7 +689,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56819284282198ED00E14FBB /* UserTest.swift in Sources */,
 				56BBA295281F12A10058DCE3 /* UserData.xcdatamodeld in Sources */,
+				5681928B282198FB00E14FBB /* AttributesPresenterTest.swift in Sources */,
 				56BBA20B281F07430058DCE3 /* UIViewController+Alert.swift in Sources */,
 				56BBA1B6281ECD050058DCE3 /* FalabellaTests.swift in Sources */,
 				56BBA284281F07C40058DCE3 /* JsonConverter.swift in Sources */,
@@ -644,6 +699,7 @@
 				56BBA202281F07430058DCE3 /* UINavigationController+Color.swift in Sources */,
 				56BBA281281F07C40058DCE3 /* NetworkManager.swift in Sources */,
 				56BBA270281F078B0058DCE3 /* LoginViewController.swift in Sources */,
+				5681927E282198E600E14FBB /* SignUpPresenterTest.swift in Sources */,
 				563C4E07281F706C004A1986 /* SignUpPresenter.swift in Sources */,
 				56BBA273281F078B0058DCE3 /* BaseViewController.swift in Sources */,
 				56BBA208281F07430058DCE3 /* String+AES.swift in Sources */,
@@ -655,9 +711,13 @@
 				56BBA267281F078B0058DCE3 /* LoginPresenter.swift in Sources */,
 				56BBA287281F07C40058DCE3 /* UserDefaultsManager.swift in Sources */,
 				56BBA213281F07630058DCE3 /* Constants.swift in Sources */,
+				5681927F282198E600E14FBB /* UserRegisterTest.swift in Sources */,
+				56819283282198ED00E14FBB /* LoginPesenterTest.swift in Sources */,
+				5681928C282198FB00E14FBB /* ValutaTest.swift in Sources */,
 				563C4E10281F70DA004A1986 /* DetailsViewController.swift in Sources */,
 				56BBA210281F07630058DCE3 /* Validator.swift in Sources */,
 				56BBA243281F078B0058DCE3 /* UserRegister.swift in Sources */,
+				56819287282198F300E14FBB /* DetailsPresentTest.swift in Sources */,
 				56BBA28A281F07C40058DCE3 /* CoreDataManager.swift in Sources */,
 				56BBA26A281F078B0058DCE3 /* User.swift in Sources */,
 				56BBA264281F078B0058DCE3 /* AttributesViewController.swift in Sources */,

@@ -27,7 +27,7 @@
                     <rect key="frame" x="52" y="206" width="310.5" height="41"/>
                     <color key="textColor" red="0.33333333333333331" green="0.3411764705882353" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-9H-4Iv">
                     <rect key="frame" x="52" y="246" width="310.5" height="1"/>
@@ -120,7 +120,7 @@
         </view>
     </objects>
     <resources>
-        <image name="falabella" width="100" height="100"/>
+        <image name="falabella" width="66.666664123535156" height="66.666664123535156"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
